@@ -2,7 +2,7 @@ name: Actions Workflow - Create MySQL DB on On-Premise Ubuntu
 on: [push]
 
 jobs:
-  test-host:
+  test-host: {{$SERVER_HOST}}
     runs-on: ubuntu-latest
     services:
       mysql:
