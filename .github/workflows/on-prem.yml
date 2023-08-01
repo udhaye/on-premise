@@ -1,3 +1,6 @@
+name: Actions Workflow - Create MySQL DB on On-Premise Ubuntu
+on: [push]
+
 jobs:
   test-host:
     runs-on: ubuntu-latest
