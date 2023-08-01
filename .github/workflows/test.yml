@@ -1,0 +1,9 @@
+-name: Test
+  env: 
+    TEST_GITHUB_IP: ${{ secrets.SERVER_IP }}
+    TEST_GITHUB_USER: ${{ secrets.SERVER_USER }}
+    
+  run: |
+    echo ${#TEST_GITHUB_IP}
+    ECHO ${#TEST_GITHUB_USER}
+    
