@@ -11,10 +11,10 @@ jobs:
 
 
 -name: Test
-  env: 
+  run: 
     TEST_GITHUB_IP: ${{ secrets.SERVER_IP }}
     TEST_GITHUB_USER: ${{ secrets.SERVER_USER }}
-    
+-name: Display   
   run: |
     echo ${#TEST_GITHUB_IP}
     ECHO ${#TEST_GITHUB_USER}
